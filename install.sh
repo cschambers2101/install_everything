@@ -16,18 +16,18 @@ function clone {
 }
 
 function install {
-    cd ~/github/dotfiles
+    cd ~/src/dotfiles
     bash install.sh
-    cd ~/github/install-course-programs
+    cd ~/src/install-course-programs
     python3 install.py
-    cd ~/github/node_install
+    cd ~/src/node_install
     bash install.sh
 }
 
 
-if [ ! -d "~/github" ] 
+if [ ! -d "~/src" ] 
 then
-    mkdir ~/github
+    mkdir ~/src
 fi
 
 clone
