@@ -13,6 +13,7 @@ function clone {
     check https://github.com/cschambers2101/dotfiles.git
     check https://github.com/cschambers2101/install-course-programs.git
     check https://github.com/cschambers2101/node_install.git
+    check https://github.com/cschambers2101/install-dotnet.git
 }
 
 function install {
@@ -21,6 +22,8 @@ function install {
     cd ~/src/install-course-programs
     python3 install.py
     cd ~/src/node_install
+    bash install.sh
+    cd ~/src/install-dotnet
     bash install.sh
 }
 
